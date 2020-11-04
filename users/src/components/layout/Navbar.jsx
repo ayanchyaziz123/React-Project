@@ -23,8 +23,10 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
+            <NavLink className="btn btn-outline-primary" to="/users/add">Add User</NavLink>
 
            </div>
+
         </nav>
     )
 }

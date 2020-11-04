@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [users, setUser] = useState([]);
@@ -36,6 +37,11 @@ const Home = () => {
                                 <td>{user.name}</td>
                                 <td>{user.username}</td>
                                 <td>{user.email}</td>
+                                <td>
+                                    <Link className="btn btn-primary mr-1">View</Link>
+                                    <Link className="btn btn-outline-warning mr-1">Edit</Link>
+                                    <Link className="btn btn-outline-danger">Delete</Link>
+                                </td>
 
                             </tr>
                         ))
